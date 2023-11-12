@@ -3,8 +3,8 @@ import os, sys
 import numpy as np
 import arrow
 
-from fastdlo.siam_net.nn_models import SiameseNetwork
-from fastdlo.siam_net.nn_dataset import AriadnePredictData
+from unifastdlo.fastdlo.siam_net.nn_models import SiameseNetwork
+from unifastdlo.fastdlo.siam_net.nn_dataset import AriadnePredictData
 
 from termcolor import cprint 
 
