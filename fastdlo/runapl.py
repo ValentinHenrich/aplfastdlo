@@ -1,9 +1,9 @@
 import os, sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
-from aplfastdlo.fastdlo.core_binary import Pipeline as BiPipeline
-from aplfastdlo.fastdlo.core_mask import Pipeline as MaPipeline
-from aplfastdlo.fastdlo.core import Pipeline as Pipeline
+from fastdlo.core_binary import Pipeline as BiPipeline
+from fastdlo.core_mask import Pipeline as MaPipeline
+from fastdlo.core import Pipeline as Pipeline
 
 def fastdlo(image, inputmask, method):
 

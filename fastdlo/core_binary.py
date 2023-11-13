@@ -2,12 +2,12 @@ import itertools
 import numpy as np
 import arrow, cv2
 
-from aplfastdlo.fastdlo.siam_net.nn_predict import NN
-from aplfastdlo.fastdlo.seg_net.predict import SegNet
+from fastdlo.siam_net.nn_predict import NN
+from fastdlo.seg_net.predict import SegNet
 
-from aplfastdlo.fastdlo.siam_net.nn_dataset import AriadnePredictData
-from aplfastdlo.fastdlo.proc.labelling import LabelsPred
-import aplfastdlo.fastdlo.proc.utils as utils
+from fastdlo.siam_net.nn_dataset import AriadnePredictData
+from fastdlo.proc.labelling import LabelsPred
+import fastdlo.proc.utils as utils
 
 class Pipeline():
     def __init__(self, checkpoint_siam, checkpoint_seg=None, img_w = 640, img_h = 480):
