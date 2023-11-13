@@ -3,8 +3,8 @@ import numpy as np
 import torch
 import cv2 
 
-import unifastdlo.fastdlo.seg_net.model as network
-from unifastdlo.fastdlo.seg_net.dataset import BasicDataset
+import aplfastdlo.fastdlo.seg_net.model as network
+from aplfastdlo.fastdlo.seg_net.dataset import BasicDataset
 
 
 model_map = {

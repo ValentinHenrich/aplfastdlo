@@ -1,6 +1,6 @@
 import itertools
 import numpy as np
-import arrow
+import arrow, cv2
 
 from aplfastdlo.fastdlo.siam_net.nn_predict import NN
 from aplfastdlo.fastdlo.seg_net.predict import SegNet
@@ -8,9 +8,6 @@ from aplfastdlo.fastdlo.seg_net.predict import SegNet
 from aplfastdlo.fastdlo.siam_net.nn_dataset import AriadnePredictData
 from aplfastdlo.fastdlo.proc.labelling import LabelsPred
 import aplfastdlo.fastdlo.proc.utils as utils
-
-
-
 
 class Pipeline():
 
@@ -28,7 +25,9 @@ class Pipeline():
         t0 = arrow.utcnow()
 
         # MASK
-        mask_img = self.network_seg.predict_img(source_img)
+        mask_img = self.network_seg.predict_img(mask_img)
+        #cv2.imshow("mask_img (aplfastdlo/fastdlo/core_mask)", mask_img)
+        #cv2.waitKey(0)
 
         mask_img[mask_img > mask_th] = 255
         mask_img[mask_img != 255] = 0

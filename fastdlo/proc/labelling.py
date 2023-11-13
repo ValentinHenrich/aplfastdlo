@@ -4,9 +4,9 @@ from termcolor import cprint
 import arrow
 import numpy as np 
 
-import unifastdlo.fastdlo.proc.utils as utils
-from unifastdlo.fastdlo.proc.graphx import Graph
-from unifastdlo.fastdlo.proc.skel import Processing
+import aplfastdlo.fastdlo.proc.utils as utils
+from aplfastdlo.fastdlo.proc.graphx import Graph
+from aplfastdlo.fastdlo.proc.skel import Processing
 
 import matplotlib.pyplot as plt
 
